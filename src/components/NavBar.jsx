@@ -30,7 +30,6 @@ const NavBar = () => {
 
         <div className="flex items-center justify-between bg-slate-800 px-32 fixed w-full z-10">
             <a >
-                {/* <img src='./src/assets/initial.png' alt="" className='bg-white'/> */}
                 <Link to={'HOME'} smooth duration={500}><img src={logo} alt="" className='flex bg-transparent ml-3 scale-50 flex-shrink-0 cursor-pointer' /></Link>
             </a>
             <input type="checkbox" class="peer hidden" name="hamburger" id="hamburger" />
