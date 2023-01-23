@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react'
-import { MdOutlineKeyboardArrowRight } from "react-icons/md"
 import {FaGithub, FaLinkedin} from 'react-icons/fa';
-import {HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonLinesFill} from 'react-icons/bs';
 import AOS from 'aos';
 import 'aos/dist/aos.css'

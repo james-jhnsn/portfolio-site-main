@@ -1,11 +1,8 @@
 import React, { useState } from 'react'
-import { FaBars, FaTimes } from 'react-icons/fa'
 import logo from '../assets/initial.png';
 import {Link} from 'react-scroll';
 
 const NavBar = () => {
-
-    const [nav, setNav] = useState(false)
 
     const links = [
         {
