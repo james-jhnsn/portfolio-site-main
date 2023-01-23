@@ -1,5 +1,6 @@
 import React from 'react'
 import weather from '../assets/portfolio/weather.PNG';
+import calc from '../assets/portfolio/calc.PNG';
 
 const Portfolio = () => {
 
@@ -12,9 +13,9 @@ const Portfolio = () => {
     },
     {
       id: 1,
-      src: weather,
-      href: 'https://localweatherwatch.netlify.app/',
-      repo: 'https://github.com/Jamesjr95/localweatherwatch'
+      src: calc,
+      href: 'https://calculator-react-jay.netlify.app',
+      repo: 'https://github.com/Jamesjr95/calculator-react'
     },
     {
       id: 1,
