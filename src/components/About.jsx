@@ -22,7 +22,7 @@ const About = () => {
         // </div>
 
 
-          <div name='ABOUT' className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-16 px-32 h-screen max-w-screen-lg">
+          <div name='ABOUT' className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-16 px-32 h-screen">
              <img src={aboutImage} alt="" data-aos="fade-up" data-aos-delay="400" />
              <div data-aos="fade-down" data-aos-delay="600">
                 <h3 className="font-bold text-blue-600 text-2xl">ABOUT ME</h3>
