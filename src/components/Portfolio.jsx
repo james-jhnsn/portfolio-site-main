@@ -1,6 +1,7 @@
 import React from 'react'
 import weather from '../assets/portfolio/weather.PNG';
 import calc from '../assets/portfolio/calc.PNG';
+import tictactoe from '../assets/portfolio/tic-tac-toe.PNG'
 
 const Portfolio = () => {
 
@@ -19,9 +20,9 @@ const Portfolio = () => {
     },
     {
       id: 1,
-      src: weather,
-      href: 'https://localweatherwatch.netlify.app/',
-      repo: 'https://github.com/Jamesjr95/localweatherwatch'
+      src: tic-tac-toe,
+      href: 'https://xs-os-react.netlify.app/',
+      repo: 'https://github.com/Jamesjr95/tictactoe-react'
     },
   ]
 
