@@ -20,7 +20,7 @@ const Portfolio = () => {
     },
     {
       id: 1,
-      src: tic-tac-toe,
+      src: tictactoe,
       href: 'https://xs-os-react.netlify.app/',
       repo: 'https://github.com/Jamesjr95/tictactoe-react'
     },
