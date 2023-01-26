@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 import logo from '../assets/initial.png';
 import {Link} from 'react-scroll';
 
@@ -26,7 +26,7 @@ const NavBar = () => {
     return (
 
         <div className="flex items-center justify-between bg-slate-800 px-32 fixed w-full z-10">
-            <a >
+            <a>
                 <Link to={'HOME'} smooth duration={500}><img src={logo} alt="" className='flex bg-transparent ml-3 scale-50 flex-shrink-0 cursor-pointer' /></Link>
             </a>
             <input type="checkbox" class="peer hidden" name="hamburger" id="hamburger" />

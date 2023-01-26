@@ -28,14 +28,14 @@ const Portfolio = () => {
 
   return (
    
-    <div name='WORK' className="px-32 pt-32 h-screen">
+    <div name='WORK' className="px-32 pt-32">
       <h3 className="font-bold text-blue-600 text-2xl text-center" data-aos="fade-up">PORTFOLIO</h3>
       <h4 className="text-white font-bold text-3xl mt-2 text-center" data-aos="fade-up">LATEST PROJECTS</h4>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-8">
         {
           portfolios.map(({ id, src, href, repo }) => (
             <div id={id} className="flex flex-col bg-slate-800/80 rounded-md overflow-hidden" data-aos="zoom-in" data-aos-delay="400">
-              <img src={src} alt="" className='' />
+              <img src={src} alt="" className='p-image' />
               <div className='py-4 flex items-center justify-center'>
                 <a href={href}><button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-white'>Demo</button>
                 </a>
