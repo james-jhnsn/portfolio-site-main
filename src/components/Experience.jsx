@@ -9,7 +9,7 @@ import tailwind from '../assets/tailwind.png';
 import django from '../assets/django.png'
 import python from '../assets/python.png'
 import bootstrap from '../assets/bootstrap.png'
-import cSharp from '../assets/c#.png';
+import cSharp from '../assets/cSharp.png';
 
 const Experience = () => {
     const techs = [
