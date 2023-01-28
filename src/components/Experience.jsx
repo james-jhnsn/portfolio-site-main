@@ -9,6 +9,7 @@ import tailwind from '../assets/tailwind.png';
 import django from '../assets/django.png'
 import python from '../assets/python.png'
 import bootstrap from '../assets/bootstrap.png'
+import cSharp from '../assets/c#.png';
 
 const Experience = () => {
     const techs = [
@@ -56,6 +57,11 @@ const Experience = () => {
             id: 11,
             src: bootstrap,
             title: "Bootstrap",
+        },
+        {
+            id: 12,
+            src: cSharp,
+            title: "C#",
         },
     ];
 
