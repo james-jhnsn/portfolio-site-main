@@ -34,13 +34,13 @@ const Portfolio = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-8">
         {
           portfolios.map(({ id, src, href, repo }) => (
-            <div id={id} className="flex flex-col bg-slate-800/80 rounded-md overflow-hidden" data-aos="zoom-in" data-aos-delay="400">
+            <div id={id} className="flex flex-col rounded-sm bg-slate-800/80 overflow-hidden" data-aos="zoom-in" data-aos-delay="400">
               <img src={src} alt="" className='p-image' />
-              <div className='py-4 flex items-center justify-center'>
-                <a href={href}><button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-white'>Demo</button>
+              <div className='py-4 flex items-center justify-evenly'>
+                <a className='p-button hover:scale-110 transition duration-200 ease-in-out' href={href}> Demo
                 </a>
-                <a href={repo}>
-                  <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-white'>Code</button>
+                <a className='p-button ml-5 hover:scale-110 transition duration-200 ease-in-out' href={repo}> Code
+                  
                 </a>
               </div>
             </div>

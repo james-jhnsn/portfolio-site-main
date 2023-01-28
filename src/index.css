@@ -20,7 +20,12 @@ body {
     background-size:cover;
 }
 
-.p-image {
-    width: auto;
+
+
+.p-button {
+    background-color: #2563eb;
+    color: white; 
+    padding: .5rem;
+    border-radius: .2rem;
 }
 
