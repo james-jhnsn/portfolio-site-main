@@ -16,7 +16,7 @@ const About = () => {
                    I'm a Full-Stack Developer from Oregon. I have a passion for UI effects, animations, and creating intuitive user experiences. 
                    </p>
                    <br />
-                  <p> I excel at learning new frameworks and technologies by tackling new and challenging projects everyday.</p>
+                  <p className="text-lg text-slate-500 mt-8"> I excel at learning new frameworks and technologies by tackling new and challenging projects everyday.</p>
                 
 
              </div>
