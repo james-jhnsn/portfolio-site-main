@@ -13,7 +13,8 @@ const About = () => {
                 <h3 className="font-bold text-blue-600 text-2xl">ABOUT ME</h3>
                 <h4 className="text-white font-bold text-3xl mt-2">I'm James Johnson</h4>
                 <p className="text-lg text-slate-500 mt-8">
-                   I'm a Full-Stack Developer from Oregon. I have a passion for UI effects, animations, and creating intuitive user experiences.
+                   I'm a Full-Stack Developer from Oregon. I have a passion for UI effects, animations, and creating intuitive user experiences <br />
+                   I excel at learning new frameworks and technologies by tackling new and challenging projects everyday.
                 </p>
 
              </div>
