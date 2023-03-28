@@ -1,4 +1,6 @@
 ## <p align="center">Portfolio</p>
+[![image](https://user-images.githubusercontent.com/92341570/228390698-152a7aa4-712f-48d6-9382-6be4ae92728e.png)](https://jamesjohnson.codes/)
+
 
 ## Features:
 * The user can view all my work and contact me
