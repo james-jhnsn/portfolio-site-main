@@ -10,9 +10,10 @@
 * Tailwind css
 
 ## Todos
-1. Improve user experience by adding loading animation to webpage
-2. ~~add animations to work, experience, and contact pages~~
-3. ~~add smooth scroll~~
+
+1. ~~add animations to work, experience, and contact pages~~
+2. ~~add smooth scroll~~
+3. Improve user experience by adding loading animation to webpage
 
 ## Project Setup
 
