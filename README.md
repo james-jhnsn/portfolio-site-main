@@ -7,17 +7,17 @@
 * Simple modern design based on the Tailwind css framework
 * Built to be mobile friendly
 
-## Built With
+## Built With:
 * React
 * Tailwind css
 
-## Todos
+## Todos:
 
 1. ~~add animations to work, experience, and contact pages~~
 2. ~~add smooth scroll~~
 3. Improve user experience by adding loading animation to webpage
 
-## Project Setup
+## Project Setup:
 
 ```sh
 npm install
