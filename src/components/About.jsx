@@ -13,9 +13,10 @@ const About = () => {
             <h3 className="font-bold text-blue-600 text-2xl">ABOUT ME</h3>
             <h4 className="text-white font-bold text-3xl mt-2">I'm James Johnson</h4>
             <p className="text-lg text-slate-500 mt-8">
-               I'm a Full-Stack Developer from Oregon. I have a passion for UI effects, animations, and creating intuitive user experiences.
+            I am a skilled software engineer with a passion for back-end programming. I specialize in developing efficient and scalable systems that power complex web applications. My expertise lies in designing and implementing database architecture, optimizing server performance, and writing clean, maintainable code.
             </p>
-            <p className="text-lg text-slate-500 mt-8"> I excel at learning new frameworks and technologies by tackling new and challenging projects everyday.</p>
+            <p className="text-lg text-slate-500 mt-8"> I am experienced in several programming languages, including Python, Java, and C#, and am always eager to learn new technologies. My attention to detail, strong problem-solving skills, and ability to work in a team environment make me a valuable asset to any project.</p>
+            <p className="text-lg text-slate-500 mt-8"> Outside of work, I enjoy reading about the latest advancements in technology and staying up-to-date with industry trends. I am committed to continuous learning and improvement and am excited about the opportunities that lie ahead in my career as a back-end software engineer.</p>
 
 
          </div>
