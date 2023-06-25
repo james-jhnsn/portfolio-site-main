@@ -593,7 +593,9 @@
         function addVerticalNavigation(){
             $body.append('<div id="' + SECTION_NAV + '"><ul></ul></div>');
             nav = $(SECTION_NAV_SEL);
-
+            // Hide the vertical navigation
+            nav.hide();
+            
             nav.addClass(function() {
                 return options.showActiveTooltip ? SHOW_ACTIVE_TOOLTIP + ' ' + options.navigationPosition : options.navigationPosition;
             });
@@ -2164,5 +2166,12 @@
         function showError(type, text){
             console && console[type] && console[type]('fullPage: ' + text);
         }
+
+        var container = $('#fullpage'); // Select the container element
+
+        // Destroy the fullPage.js plugin and remove event listeners
+        container.fullpage.destroy();
     };
-})(jQuery, window, document, Math);
+})
+(jQuery, window, document, Math);
+
