@@ -5,6 +5,10 @@ Lavish HTML CSS Template
 https://templatemo.com/tm-458-lavish
 		
 */
+html, body {
+    height: 100%;
+    overflow: auto;
+}
 
 body
 {
