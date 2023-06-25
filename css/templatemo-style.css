@@ -1,14 +1,3 @@
-/*
-
-Lavish HTML CSS Template
-
-https://templatemo.com/tm-458-lavish
-		
-*/
-html, body {
-    height: 100%;
-    overflow: auto;
-}
 
 body
 {
@@ -387,19 +376,20 @@ h1,h2,h3,h4,h5
     #contact-form {
         position: relative;
       }
-    
+       
       #loading-indicator,
       #success-message,
       #error-message {
         position: absolute;
-        bottom: -30px; /* Adjust this value to control the distance from the submit button */
+        bottom: -4rem;
         left: 0;
         right: 0;
         margin: auto;
         text-align: center;
         display: none;
+        z-index: 999; /* Ensure the messages appear on top */
       }
-    
+      
       .spinner {
         display: inline-block;
         width: 20px;
@@ -409,7 +399,7 @@ h1,h2,h3,h4,h5
         border-radius: 50%;
         animation: spin 1s infinite linear;
       }
-    
+      
       @keyframes spin {
         0% {
           transform: rotate(0deg);
