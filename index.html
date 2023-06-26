@@ -25,11 +25,56 @@
 		<link rel="stylesheet" href="css/jquery.fullPage.css">
 		<!-- custom -->
 		<link rel="stylesheet" href="css/templatemo-style.css">
+		<style>
+			.spinner {
+			  display: inline-block;
+			  width: 40px;
+			  height: 40px;
+			  border: 3px solid #fff;
+			  border-top-color: #030303;
+			  border-radius: 50%;
+			  animation: spin 1s ease-in-out infinite;
+			}
+		
+			@keyframes spin {
+			  0% {
+				transform: rotate(0deg);
+			  }
+			  100% {
+				transform: rotate(360deg);
+			  }
+			}
 
+		
+			#loading-indicator-1 {
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #030303;
+				z-index: 9999;
+			  }
+
+			  #fullpage {
+				opacity: 0;
+				transition: opacity 0.8s ease-in-out;
+			  }
+
+			  #fullpage.loaded {
+				opacity: 1;
+			  }
+			  
+		  </style>
 	</head>
 	<body>
-
-	<div id="fullpage">
+		<div id="loading-indicator-1">
+			<div class="spinner"></div>
+		  </div>
+		<div id="fullpage">
 
 		<!-- start home -->
 		<div id="home" class="section">
@@ -239,9 +284,24 @@
 
 	</div>
 
-		<!-- jQuery -->
-		<script src="js/jquery.js"></script>
-		<!-- bootstrap -->
+	
+	<script>
+		window.addEventListener("load", function() {
+			var loadingIndicator = document.getElementById("loading-indicator-1");
+			setTimeout(function() {
+				loadingIndicator.style.display = "none";
+			}, 1000); // Adjust the delay time as needed
+		});
+	</script>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+	<script>
+		$(window).on('load', function() {
+			$('#fullpage').addClass('loaded');
+		  });
+	</script>
+	<!-- bootstrap -->
 		<script src="js/bootstrap.min.js"></script>
 		<!-- fullpage -->
 		<script src="js/jquery.fullPage.js"></script>

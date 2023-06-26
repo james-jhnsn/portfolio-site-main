@@ -381,7 +381,7 @@ h1,h2,h3,h4,h5
       #success-message,
       #error-message {
         position: absolute;
-        bottom: -4rem;
+        bottom: -6rem;
         left: 0;
         right: 0;
         margin: auto;
