@@ -288,6 +288,9 @@ h1,h2,h3,h4,h5
 
 #about img{
     border-radius: 50%;
+    width: 20rem;
+    height: 20rem; 
+    object-fit: cover; /* Ensures the image covers the entire container */
 }
 
 #about .container .img-div{
