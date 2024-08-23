@@ -287,11 +287,17 @@
 
 		<script>
 			const form = document.getElementById("contact-form");
+			const loadingIndicator = document.getElementById("loading-indicator");
+			const successMessage = document.getElementById("success-message");
+			const errorMessage = document.getElementById("error-message");
 
 			form.addEventListener("submit", async function(event) {
 				event.preventDefault();
 				
 				const formData = new FormData(form);
+				
+				// Show loading indicator
+				loadingIndicator.style.display = "block";
 				
 				try {
 					const response = await fetch("/", {
@@ -300,13 +306,26 @@
 						body: new URLSearchParams(formData).toString(),
 					});
 			
+					loadingIndicator.style.display = "none"; // Hide loading indicator
+					
 					if (response.ok) {
-						document.getElementById("success-message").style.display = "block";
+						successMessage.style.display = "block";
+						form.reset(); // Clear the form fields
+						setTimeout(() => {
+							successMessage.style.display = "none";
+						}, 5000); // Hide success message after 5 seconds
 					} else {
-						document.getElementById("error-message").style.display = "block";
+						errorMessage.style.display = "block";
+						setTimeout(() => {
+							errorMessage.style.display = "none";
+						}, 5000); // Hide error message after 5 seconds
 					}
 				} catch (error) {
-					document.getElementById("error-message").style.display = "block";
+					loadingIndicator.style.display = "none"; // Hide loading indicator
+					errorMessage.style.display = "block";
+					setTimeout(() => {
+						errorMessage.style.display = "none";
+					}, 5000); // Hide error message after 5 seconds
 				}
 			});
 		  </script>
