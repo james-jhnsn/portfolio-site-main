@@ -201,22 +201,6 @@
 					</div>
 					</a>
 				</div>
-				<!-- <div class="col-md-6 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
-					<div class="portfolio-thumb">
-						<img src="images/portfolio-img4.jpg" class="img-responsive" alt="portfolio img">
-							<div class="portfolio-overlay">
-								<h4>Old Artwork</h4>
-							</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
-					<div class="portfolio-thumb">
-						<img src="images/portfolio-img5.jpg" class="img-responsive" alt="portfolio img">
-							<div class="portfolio-overlay">
-								<h4>New Animation</h4>
-							</div>
-					</div>
-				</div> -->
 			</div>
 		</div>
 	</div>
@@ -234,7 +218,7 @@
 						</address>
 					</div>
 					<div class="col-lg-6 col-md-6 col-xs-10 wow fadeInUp" data-wow-delay="0.6s">
-						<form action="https://getform.io/f/8280d2b7-40f0-4e0a-92a3-05dc55385d50" method='POST' id="contact-form" role="form" method="post" action="#">
+						<form name="contact" method= "POST" id="contact-form" role="form" data-netlify="true" action="#">
 						  <input name="name" type="text" class="form-control" id="name" placeholder="Your Name">
 						  <input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
 						  <textarea name="message" rows="5" class="form-control" id="message" placeholder="Your Message"></textarea>
@@ -302,40 +286,29 @@
 		<script src="js/custom.js"></script>
 
 		<script>
-			document.getElementById('contact-form').addEventListener('submit', function(e) {
-				e.preventDefault();
+			const form = document.querySelector("form");
+
+			form.addEventListener("submit", async function(event) {
+				event.preventDefault();
 			
-				var form = e.target;
-				var formData = new FormData(form);
+				const formData = new FormData(form);
 			
-				var xhr = new XMLHttpRequest();
-				xhr.open('POST', form.action);
-				xhr.onreadystatechange = function() {
-				  if (xhr.readyState === 4) {
-					document.getElementById('loading-indicator').style.display = 'none'; // Hide the loading indicator
-					if (xhr.status === 200) {
-					  // Show success message
-					  document.getElementById('success-message').style.display = 'block';
-					  form.reset();
-					  // Hide success message after 3 seconds
-					  setTimeout(function() {
-						document.getElementById('success-message').style.display = 'none';
-					  }, 3000);
+				try {
+					const response = await fetch("/", {
+						method: "POST",
+						headers: { "Content-Type": "application/x-www-form-urlencoded" },
+						body: new URLSearchParams(formData).toString(),
+					});
+			
+					if (response.ok) {
+						document.getElementById("success-message").style.display = "block";
 					} else {
-					  // Show error message
-					  document.getElementById('error-message').style.display = 'block';
-					  // Hide error message after 3 seconds
-					  setTimeout(function() {
-						document.getElementById('error-message').style.display = 'none';
-					  }, 3000);
+						document.getElementById("error-message").style.display = "block";
 					}
-				  }
-				};
-			
-				// Show the loading indicator
-				document.getElementById('loading-indicator').style.display = 'block';
-				xhr.send(formData);
-			  });
+				} catch (error) {
+					document.getElementById("error-message").style.display = "block";
+				}
+			});
 		  </script>
 
 	</body>
